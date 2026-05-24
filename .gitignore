@@ -8,3 +8,13 @@
 # Temporary files
 *.tmp
 *.log
+
+# 作品集图片 - 不上传到 GitHub（版权保护）
+images/*.png
+images/*.jpg
+images/*.jpeg
+images/*.gif
+images/*.webp
+
+# 保留 .gitkeep 文件
+!images/.gitkeep
