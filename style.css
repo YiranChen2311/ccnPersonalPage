@@ -117,61 +117,30 @@ nav .container {
     background-color: #f8f9fa;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+.portfolio-single {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .portfolio-item {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     background-color: #fff;
 }
 
 .portfolio-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-item img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s;
-}
-
-.portfolio-item:hover img {
-    transform: scale(1.05);
-}
-
-.portfolio-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    color: #fff;
-    padding: 2rem;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-
-.portfolio-item:hover .portfolio-overlay {
-    transform: translateY(0);
-}
-
-.portfolio-overlay h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.portfolio-overlay p {
-    font-size: 0.9rem;
 }
 
 /* 联系方式部分 */
@@ -236,8 +205,9 @@ footer {
         flex: 0 0 200px;
     }
     
-    .portfolio-grid {
-        grid-template-columns: 1fr;
+    .portfolio-single {
+        max-width: 100%;
+        padding: 0 10px;
     }
 }
 
